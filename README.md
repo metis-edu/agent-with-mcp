@@ -1,4 +1,4 @@
-# Simple AI Agent with MCP and UV
+# Simple AI Agent with MCP, Alith and UV
 
 This project demonstrates how to create a simple AI agent using Alith, MCP (Model Context Protocol), and UV to fetch and provide block numbers from the Metis Blockchain (L2).
 
