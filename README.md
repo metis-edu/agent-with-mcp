@@ -60,6 +60,19 @@ uv pip install alith web3 requests
 uv add "mcp[cli]"
 ```
 
+Model Provider Settings
+We can configure different AI model providers. Here's how to set up your API key:
+
+For Unix/Linux:
+```bash
+export OPENAI_API_KEY=<your API key>
+```
+
+For Windows:
+```bash
+$env:OPENAI_API_KEY = "<your API key>"
+```
+
 ### 3. Create the MCP Server
 
 Create a file named `mcp_server.py` with the following code:
