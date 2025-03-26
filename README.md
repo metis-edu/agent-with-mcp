@@ -56,6 +56,10 @@ Install the required packages, including Alith, Web3, MCP, and requests using UV
 uv pip install alith web3 requests
 ```
 
+```bash
+uv add "mcp[cli]"
+```
+
 ### 3. Create the MCP Server
 
 Create a file named `mcp_server.py` with the following code:
