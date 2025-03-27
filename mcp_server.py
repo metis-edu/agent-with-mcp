@@ -9,16 +9,16 @@ w3 = Web3(Web3.HTTPProvider("https://andromeda.metis.io/?owner=1088"))
 
 # MCP Tool: Fetch Latest Block Number (already working)
 @mcp.tool()
-def get_latest_block() -> int:
-    """Fetches the latest block number from Metis mainnet."""
-    return w3.eth.block_number
+def get_latest_block() -> str:
+    """Returns the latest block number from Metis mainnet."""
+    block = w3.eth.block_number
+    return {"message": f"The latest Metis block number is {block}."}
 
-# MCP Tool: Fetch Previous Block Number (already working)
 @mcp.tool()
-def get_previous_block() -> int:
-    """Fetches the previous block number from Metis mainnet."""
-    latest_block = get_latest_block()      
-    return latest_block - 1
+def get_previous_block() -> str:
+    """Returns the previous block number."""
+    block = w3.eth.block_number - 1
+    return {"message": f"The previous Metis block number is {block}."}
 
 # Run the MCP server
 if __name__ == "__main__":

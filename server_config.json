@@ -1,10 +1,16 @@
 {
-    "mcpServers": {
-        "blockchain": {
-            "command": "python",
-            "args": [
-                "mcp_server.py"
-            ]
-        }
+  "mcpServers": {
+    "blockchain": {
+      "command": "python",
+      "args": ["mcp_server.py"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"]
+    },
+    "github_org": {
+      "command": "python",
+      "args": ["github_org_server.py"]
     }
+  }
 }
